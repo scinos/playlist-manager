@@ -24,7 +24,6 @@
   "scripts": {
     "lint": "eslint .",
     "dev": "node -r ts-node/register/transpile-only -- src/index.ts",
-    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "rm -fr dist/* && tsc"
   }
 }
