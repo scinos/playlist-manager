@@ -7,6 +7,7 @@
     "@koa/router": "^10.0.0",
     "@types/koa": "^2.11.6",
     "koa": "^2.13.1",
+    "pm2": "^4.5.1",
     "tslib": "^2.1.0"
   },
   "devDependencies": {
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node -r ts-node/register/transpile-only -- src/index.ts",
+    "dev": "node -r ts-node/register/transpile-only -- src/index.ts",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "rm -fr dist/* && tsc"
   }
 }
