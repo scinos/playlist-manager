@@ -4,11 +4,21 @@
     "module": "commonjs",
     "target": "es2020",
 
+    "outDir": "dist",
+
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    "importHelpers":true,
+    "noEmitHelpers": true
   },
+
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

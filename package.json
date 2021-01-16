@@ -6,7 +6,8 @@
   "dependencies": {
     "@koa/router": "^10.0.0",
     "@types/koa": "^2.11.6",
-    "koa": "^2.13.1"
+    "koa": "^2.13.1",
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.13.0",
@@ -21,6 +22,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node -r ts-node/register/transpile-only -- src/index.ts"
+    "start": "node -r ts-node/register/transpile-only -- src/index.ts",
+    "build": "rm -fr dist/* && tsc"
   }
 }
