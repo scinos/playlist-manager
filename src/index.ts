@@ -1,2 +1,8 @@
-export const a = 3;
-export const b = 3;
+import Koa from 'koa';
+const app = new Koa();
+
+app.use(async (ctx) => {
+    ctx.body = 'Hello World';
+});
+
+app.listen(3000);
